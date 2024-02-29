@@ -14,9 +14,6 @@ WORKSPACE = args.workspace
 if WORKSPACE == None: WORKSPACE = "./workspace"
 
 BUG_FOLDER_PATH = WORKSPACE
-if not os.path.isdir(BUG_FOLDER_PATH):
-    print("The bug %s has not been checked out." % BUG_ID)
-    sys.exit()
 
 print("Running the tests related to the bug %s..." % BUG_ID)
 
