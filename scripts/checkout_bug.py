@@ -70,7 +70,7 @@ cmd = "find . -mindepth 1 -maxdepth 1 -not -name workspace -print0 | xargs -0 -I
 subprocess.call(cmd, shell=True)
 
 # check out master
-cmd = "cd %s; git reset .; git checkout -- .; git clean -f; git checkout master;" % BEARS_PATH
+cmd = "cd %s; git reset .; git checkout -- .; git clean -f; git checkout andre;" % BEARS_PATH
 subprocess.call(cmd, shell=True)
 
 print("The bug %s was checked out." % BUG_ID)
