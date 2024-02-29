@@ -19,7 +19,7 @@ cmd = "mkdir -p %s" % WORKSPACE
 
 subprocess.call(cmd, shell=True)
 
-BUG_FOLDER_PATH = os.path.join(WORKSPACE, BUG_ID)
+BUG_FOLDER_PATH = WORKSPACE
 if os.path.isdir(BUG_FOLDER_PATH):
     print("The bug %s has already been checked out." % BUG_ID)
     sys.exit()

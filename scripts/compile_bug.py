@@ -12,7 +12,7 @@ args = parser.parse_args()
 BUG_ID = args.bugId
 WORKSPACE = args.workspace
 
-BUG_FOLDER_PATH = os.path.join(WORKSPACE, BUG_ID)
+BUG_FOLDER_PATH = WORKSPACE
 if not os.path.isdir(BUG_FOLDER_PATH):
     print("The bug %s has not been checked out." % BUG_ID)
     sys.exit()
